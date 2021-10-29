@@ -90,6 +90,7 @@
         }
 
         @include mobile {
+          padding: 10px;
         }
       }
 
@@ -127,7 +128,7 @@
         }
 
         @include mobile {
-          height: 50px;
+          height: 100px;
         }
       }
 
