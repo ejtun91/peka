@@ -14,7 +14,7 @@ const Contact = () => {
         "service_krewn27",
         "template_2cmh9h6",
         formRef.current,
-        "user_0mMyO4KpD1gShyhsWdpqB"
+        "user_0mMyO4KpD1gShyhsWdpqB",
       )
       .then(
         (result) => {
@@ -24,7 +24,7 @@ const Contact = () => {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
   };
 
@@ -57,23 +57,10 @@ const Contact = () => {
       </div>
       <div className="right">
         <h2>Kontakt.</h2>
-        <form ref={formRef} onSubmit={handleSubmit}>
-          <input type="text" required placeholder="Name" name="user_name" />
-          <input
-            type="text"
-            required
-            placeholder="Subjekt"
-            name="user_subject"
-          />
-          <input type="email" required placeholder="Email" name="user_email" />
-          <textarea name="message" required placeholder="Poruka"></textarea>
-          <button type="submit">Posalji</button>
-          {message && (
-            <span style={{ marginTop: "1em", height: "20px" }}>
-              Thank you for your message
-            </span>
-          )}
-        </form>
+
+        <a href="tel:+385976669199" className="phone">
+          📞 +385 97 666 9199
+        </a>
       </div>
     </div>
   );
