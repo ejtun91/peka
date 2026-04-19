@@ -5,7 +5,7 @@
   height: 70px;
   background-color: white;
   position: fixed;
-  color: $g.mainColor;
+  color: #15023a;
   top: 0;
   z-index: 3;
   transition: all 1s ease;
@@ -59,7 +59,7 @@
         span {
           width: 100%;
           height: 3px;
-          background-color: $g.mainColor;
+          background-color: #15023a;
           transform-origin: left;
           transition: all 2s ease;
         }
@@ -68,7 +68,7 @@
   }
 
   &.active {
-    background-color: $g.mainColor;
+    background-color: #15023a;
     color: white;
 
     .hamburger {
