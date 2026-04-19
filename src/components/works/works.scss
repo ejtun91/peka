@@ -1,4 +1,4 @@
-@import "../../global.scss";
+@use "../../global.scss" as g;
 
 .works {
   background-color: chocolate;
@@ -13,7 +13,7 @@
     position: absolute;
     cursor: pointer;
 
-    @include mobile {
+    @include g.mobile {
       display: none;
     }
 
@@ -34,7 +34,7 @@
     left: 0;
     transition: all 1s ease-out;
 
-    @include mobile {
+    @include g.mobile {
       height: 100vh;
       flex-direction: column;
       justify-content: center;
@@ -55,7 +55,7 @@
         align-items: center;
         justify-content: center;
 
-        @include mobile {
+        @include g.mobile {
           width: 95%;
           height: 225px;
           margin: 5px 0;
@@ -68,7 +68,7 @@
           align-items: center;
           justify-content: center;
 
-          @include mobile {
+          @include g.mobile {
             height: max-content;
           }
 
@@ -79,7 +79,7 @@
             flex-direction: column;
             justify-content: space-between;
 
-            @include mobile {
+            @include g.mobile {
               width: 95%;
             }
 
@@ -99,7 +99,7 @@
             h2 {
               font-size: 20px;
 
-              @include mobile {
+              @include g.mobile {
                 font-size: 15px;
                 padding-bottom: 5px;
               }
@@ -107,7 +107,7 @@
             p {
               font-size: 13px;
 
-              @include mobile {
+              @include g.mobile {
                 width: 100%;
               }
             }

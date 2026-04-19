@@ -1,4 +1,4 @@
-@import "../../global.scss";
+@use "../../global.scss" as g;
 
 .portfoliolist {
   font-size: 14px;
@@ -7,7 +7,7 @@
   border-radius: 10px;
   cursor: pointer;
 
-  @include mobile {
+  @include g.mobile {
     margin-right: 20px;
   }
 

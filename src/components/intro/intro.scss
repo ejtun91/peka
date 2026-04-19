@@ -1,11 +1,11 @@
-@import "../../global.scss";
+@use "../../global.scss" as g;
 
 .intro {
   background-color: white;
   display: flex;
   overflow-y: hidden;
 
-  @include mobile {
+  @include g.mobile {
     flex-direction: column;
     align-items: center;
   }
@@ -24,14 +24,14 @@
       justify-content: center;
       float: right;
 
-      @include mobile {
+      @include g.mobile {
         align-items: flex-start;
       }
 
       img {
         height: 90%;
 
-        @include mobile {
+        @include g.mobile {
           height: 57%;
           object-fit: contain;
         }
@@ -50,7 +50,7 @@
       flex-direction: column;
       justify-content: center;
 
-      @include mobile {
+      @include g.mobile {
         padding-left: 0;
         align-items: center;
       }
@@ -58,7 +58,7 @@
       h1 {
         font-size: 60px;
         margin: 10px 0;
-        @include mobile {
+        @include g.mobile {
           font-size: 40px;
         }
       }
@@ -68,7 +68,7 @@
       h3 {
         font-size: 30px;
 
-        @include mobile {
+        @include g.mobile {
           font-size: 20px;
           text-align: center;
           width: 95%;

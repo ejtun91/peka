@@ -1,10 +1,10 @@
-@import "../../global.scss";
+@use "../../global.scss" as g;
 
 .contact {
   background-color: white;
   display: flex;
 
-  @include mobile {
+  @include g.mobile {
     flex-direction: column;
   }
 
@@ -16,7 +16,7 @@
     align-items: center;
     position: relative;
 
-    @include mobile {
+    @include g.mobile {
       display: none;
     }
 
@@ -38,7 +38,7 @@
       width: 40%;
       padding: 20px;
 
-      @include mobile {
+      @include g.mobile {
         font-size: 14px;
         width: 80%;
         margin-top: 1em;
@@ -47,7 +47,7 @@
       p {
         margin: 20px;
 
-        @include mobile {
+        @include g.mobile {
           margin: 10px;
           width: 100%;
         }
@@ -72,7 +72,7 @@
       flex-direction: column;
       align-items: center;
 
-      @include mobile {
+      @include g.mobile {
         width: 90%;
       }
 
@@ -89,7 +89,7 @@
           outline: none;
         }
 
-        @include mobile {
+        @include g.mobile {
           padding: 10px;
         }
       }
@@ -108,7 +108,7 @@
           outline: none;
         }
 
-        @include mobile {
+        @include g.mobile {
           width: 270px;
         }
       }
@@ -127,7 +127,7 @@
           outline: none;
         }
 
-        @include mobile {
+        @include g.mobile {
           height: 100px;
         }
       }

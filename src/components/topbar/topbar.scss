@@ -1,4 +1,4 @@
-@import "../../global.scss";
+@use "../../global.scss" as g;
 
 .topbar {
   width: 100%;
@@ -31,7 +31,7 @@
         align-items: center;
         margin-left: 30px;
 
-        @include mobile {
+        @include g.mobile {
           display: none;
         }
 

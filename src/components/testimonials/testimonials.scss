@@ -1,4 +1,4 @@
-@import "../../global.scss";
+@use "../../global.scss" as g;
 
 .testimonials {
   background-color: white;
@@ -9,7 +9,7 @@
   h1 {
     font-size: 50px;
 
-    @include mobile {
+    @include g.mobile {
       font-size: 20px;
       overflow: hidden;
     }
@@ -22,7 +22,7 @@
     align-items: center;
     justify-content: space-around;
 
-    @include mobile {
+    @include g.mobile {
       flex-direction: column;
       height: 100%;
       justify-content: center;
@@ -39,7 +39,7 @@
       padding: 20px;
       transition: all 1s ease;
 
-      @include mobile {
+      @include g.mobile {
         height: 160px;
         width: 90%;
         padding: 10px;
@@ -51,7 +51,7 @@
         height: 75%;
         margin: 0 30px;
 
-        @include mobile {
+        @include g.mobile {
           height: 160px;
           width: 90%;
           margin-bottom: 1em;
@@ -61,7 +61,7 @@
       &:hover {
         transform: scale(1.2);
 
-        @include mobile {
+        @include g.mobile {
           transform: scale(1.1);
         }
       }
@@ -81,7 +81,7 @@
             width: 250px;
             object-fit: contain;
 
-            @include mobile {
+            @include g.mobile {
               width: 100px;
               height: 40px;
             }
@@ -93,7 +93,7 @@
         border-radius: 10px;
         background-color: rgb(204, 187, 191);
 
-        @include mobile {
+        @include g.mobile {
           font-size: 12px;
           padding: 5px;
         }
@@ -107,14 +107,14 @@
         h3 {
           margin-bottom: 5px;
 
-          @include mobile {
+          @include g.mobile {
             font-size: 14px;
           }
         }
         h4 {
           color: gray;
 
-          @include mobile {
+          @include g.mobile {
             font-size: 13px;
           }
         }
